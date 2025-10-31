@@ -40,10 +40,10 @@ class Particle {
   x += cos(angle) * speed;
   y += sin(angle) * speed;
 
-  if (x < 0) x = width;
-  if (x > width) x = 0;
-  if (y < 0) y = height;
-  if (y > height) y = 0;
+  if (x < -(widt/2)) x = width + (widt/2);
+  if (x > width+ (widt/2)) x = -(widt/2);
+  if (y < -(widt/2)) y = height + (widt/2);
+  if (y > height+(widt/2)) y = -(widt/2);
 }
 
 
